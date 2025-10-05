@@ -3,34 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <title>Weather app</title>
   </head>
   <body>
-    <divm class="container">
-    <header>
-      <form>
-        <input type="search" name="city" placeholder="Enter a city" />
-        <input type="submit" value="Search" />
-      </form>
-    </header>
-    <main>
-      <div>
-        <h1>Paris</h1>
-        <p>
-          Tuesday 13:40, Scattered clouds
-          <br />
-          Humidity: 82%, Wind: 4 km/h
-        </p>
-      </div>
-      <div>🌦 12°C</div>
-    </main>
-    <footer>
-      This project was coded by
-      <a href="#" target="_blank">Nhlahla</a> open-sourced on
-      <a href="http://" target="_blank"> Github </a>hosted on
-      <a href="http://" target="_blank"> Netlify</a>
-    </footer>
+    <div class="container">
+      <header>
+        <form class="search-form">
+          <input
+            type="search"
+            name="city"
+            placeholder="Enter a city"
+            required
+            class="search-form-input"
+          />
+          <input type="submit" value="Search" class="search-form-button" />
+        </form>
+      </header>
+      <main>
+        <div class="weather-data">
+          <div>
+            <h1 class="weather-city">Paris</h1>
+            <p class="weather-description">
+              Tuesday 13:40, Scattered clouds
+              <br />
+              Humidity: <strong>82%</strong>, Wind: <strong>4 km/h</strong>
+            </p>
+          </div>
+          <div class="weather-temperature">
+            <div class="weather-icon">🌦</div> 
+            <div class="weather-value">12</div> 
+            <div class="weather-unit">°C</div>
+        </div>
+        </div>
+      </main>
+      <footer>
+        This project was coded by
+        <a href="#" target="_blank">Nhlahla</a> open-sourced on
+        <a href="http://" target="_blank"> Github </a>hosted on
+        <a href="http://" target="_blank"> Netlify</a>
+      </footer>
     </div>
   </body>
 </html>
