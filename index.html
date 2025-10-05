@@ -9,12 +9,12 @@
   <body>
     <div class="container">
       <header>
-        <form class="search-form">
+        <form class="search-form" id="search-form">
           <input
             type="search"
             name="city"
             placeholder="Enter a city"
-            required
+            required id="search-form-input"
             class="search-form-input"
           />
           <input type="submit" value="Search" class="search-form-button" />
@@ -23,7 +23,7 @@
       <main>
         <div class="weather-data">
           <div>
-            <h1 class="weather-city">Paris</h1>
+            <h1 class="weather-city" id="city">Paris</h1>
             <p class="weather-description">
               Tuesday 13:40, Scattered clouds
               <br />
@@ -44,5 +44,6 @@
         <a href="http://" target="_blank"> Netlify</a>
       </footer>
     </div>
+    <script src="app.js"></script>
   </body>
 </html>
