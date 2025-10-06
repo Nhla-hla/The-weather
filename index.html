@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <title>Weather app</title>
   </head>
   <body>
@@ -14,7 +15,8 @@
             type="search"
             name="city"
             placeholder="Enter a city"
-            required id="search-form-input"
+            required
+            id="search-form-input"
             class="search-form-input"
           />
           <input type="submit" value="Search" class="search-form-button" />
@@ -23,18 +25,20 @@
       <main>
         <div class="weather-data">
           <div>
-            <h1 class="weather-city" id="city">Paris</h1>
+            <h1 class="weather-city" id="city"></h1>
             <p class="weather-description">
-              Tuesday 13:40, Scattered clouds
+              <span id="time"></span>,
+              <span id="description"></span>
               <br />
-              Humidity: <strong>82%</strong>, Wind: <strong>4 km/h</strong>
+              Humidity: <strong id="humidity"></strong>, Wind:
+              <strong id="wind-speed"></strong>
             </p>
           </div>
           <div class="weather-temperature">
-            <div class="weather-icon">🌦</div> 
-            <div class="weather-value">12</div> 
+            <div class="weather-icon"></div>
+            <div class="weather-value" id="temperature"></div>
             <div class="weather-unit">°C</div>
-        </div>
+          </div>
         </div>
       </main>
       <footer>
